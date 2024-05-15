@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Baloo Bhai 2", sans-serif;
+}
+
+body {
+    background-color: #1D2F6F;
+    text-align: center;
+}
+
+h1 {
+    font-size: 6vh;
+    line-height: 1.6;
+    color: #1D2F6F;
+    margin-bottom: 10px;
+    background-color: #8390FA;
+    border-radius: 5px;
+    transition: all 0.2s ease;
+}
+
+h1:hover {
+    background-color: #1D2F6F;
+    color: #8390FA;
+}
+
+
+.container {
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.6vmin;
+}
+
+.box {
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+    font-size: 12vmin;
+    background-color: #F9E9EC;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.box:hover {
+    background-color: #f9e9ecc6;
+
+}
+
+#reset-btn,
+#new-btn {
+    padding: 1rem;
+    font-size: 1.3rem;
+    background-color: #8390FA;
+    color: #1D2F6F;
+    border-radius: 1rem;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+#reset-btn:hover,
+#new-btn:hover {
+    background-color: #5360c0;
+    color: #F9E9EC;
+}
+
+#msg {
+    color: #F9E9EC;
+    font-size: 5vmin;
+
+}
+
+.msg-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent background */
+    z-index: 999;
+    /* Ensure popup is on top */
+    visibility: hidden;
+    /* Hide by default */
+}
+
+.popup {
+    background-color: #1D2F6F;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.msg-container.show {
+    visibility: visible;
+    /* Show when needed */
+}
+
+.msg-container {
+    height: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.hide {
+    display: none;
+}
+
+.x-color {
+    color: #da547c;
+}
+
+.o-color {
+    color: #FAC748;
+}
